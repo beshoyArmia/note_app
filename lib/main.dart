@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:note_app/views/noteView.dart';
 
 void main() {
   runApp(const NoteApp());
 }
 
 class NoteApp extends StatelessWidget {
-  const NoteApp({Key? key}) : super(key: key);
+  const NoteApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(),
+      theme: ThemeData(brightness: Brightness.dark),
+      home: const NoteView(),
     );
   }
 }
