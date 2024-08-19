@@ -2,6 +2,7 @@ import 'package:hive/hive.dart';
 part 'noteModel.g.dart'; // here i do this first so it gives me error so when i
 
 //generate code it that the name of file (noteModel)
+//create type adaptor for note
 @HiveType(typeId: 0) //type id can 0 to 255 for all classes
 class NoteModel extends HiveObject {
   @HiveField(0) //Hivefiled is uniqe for this class note all classes
